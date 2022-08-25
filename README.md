@@ -2,7 +2,7 @@
 ## Model identifiers
 - Slug: grover-qm7
 - Ersilia ID: eos6o0z
-- Tags: 
+- Tags: Quantum Chemistry, Electronic Properties
 
 # Model description
 Electronic properties (atomization energy, HOMO/LUMO, etc.) determined using ab-initio density functional theory (DFT).
