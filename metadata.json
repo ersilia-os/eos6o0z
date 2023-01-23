@@ -1,0 +1,32 @@
+{
+    "Identifier": "eos6o0z",
+    "Slug": "grover-qm7",
+    "Status": "Ready",
+    "Title": "Electronic properties by DFT",
+    "Description": "The model predicts the electronic properties (atomization energy, HOMO/LUMO, etc.) of a molecule. It has been trained using the QM7 dataset from MoleculeNet, a subset of GDB13. This dataset contains the electronic measures of > 7000 molecules determined using ab-initio density functional theory (DFT). This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Other value"
+    ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "Several Electronic properties of the input",
+    "Tag": [
+        "MoleculeNet",
+        "Chemical graph model",
+        "Quantum properties"
+    ],
+    "Publication": "https://papers.nips.cc/paper/2020/hash/94aef38441efa3380a3bed3faf1f9d5d-Abstract.html",
+    "Source Code": "https://github.com/tencent-ailab/grover",
+    "License": "MIT",
+    "Contributor": "Amna-28"
+}
