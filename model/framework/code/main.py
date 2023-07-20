@@ -2,8 +2,6 @@
 import os
 import csv
 import sys
-from rdkit import Chem
-from rdkit.Chem.Descriptors import MolWt
 
 from grover.main import grover_predict
 
@@ -13,10 +11,6 @@ output_file = sys.argv[2]
 
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
-
-# my model
-
-
 
 
 # run model. No need to read the smiles from the input csv file, the model will read and return the smiles_list
@@ -30,6 +24,6 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["value"])  # header
+    writer.writerow(['u0_atom'])  # header
     for o in outputs:
-        writer.writerow([o])
+        writer.writerow(o)
