@@ -25,6 +25,8 @@ The model predicts the electronic properties (atomization energy, HOMO/LUMO, etc
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos6o0z)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6o0z.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos6o0z) (AMD64, ARM64)
 
 ## Citation
 
