@@ -60,7 +60,7 @@ def grover_predict(input_txt_path, output_path):
 
     s = os.path.dirname(os.path.abspath(__file__))
     p = Path(s)
-    model_path = str(p.parent.parent.parent.absolute()) + 'checkpoints'
+    model_path = str(p.parent.parent.parent.absolute()) + '/checkpoints'
     trained_path= model_path+'/finetune/qm7'
     print(trained_path)
 
