@@ -1,6 +1,6 @@
 # Electronic properties by DFT
 
-The model predicts the electronic properties (atomization energy) of a molecule. It has been trained using the QM7 dataset from MoleculeNet, a subset of GDB13. This dataset contains the atomization energy of > 7000 molecules determined omputed similarly to the FHI-AIMS implementation of the Perdew-Burke-Ernzerhof hybrid functional (PBE0). This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
+The model predicts the electronic properties (atomization energy, HOMO/LUMO, etc.) of a molecule. It has been trained using the QM7 dataset from MoleculeNet, a subset of GDB13. This dataset contains the electronic measures of > 7000 molecules determined using ab-initio density functional theory (DFT). This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
 
 ## Identifiers
 
@@ -14,8 +14,8 @@ The model predicts the electronic properties (atomization energy) of a molecule.
 * Task: `Regression`
 * Output: `Other value`
 * Output Type: `Float`
-* Output Shape: `Single`
-* Interpretation: Atomization energy in kcal/mol and (ranging from -800 to -2000 kcal/mol)
+* Output Shape: `List`
+* Interpretation: Several Electronic properties of the input
 
 ## References
 

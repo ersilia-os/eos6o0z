@@ -62,7 +62,6 @@ def grover_predict(input_txt_path, output_path):
     p = Path(s)
     model_path = str(p.parent.parent.parent.absolute()) + '/checkpoints'
     trained_path= model_path+'/finetune/qm7'
-    print(trained_path)
 
     args = Namespace(batch_size=32, checkpoint_dir= trained_path, checkpoint_path=None, checkpoint_paths=[trained_path + '/fold_0/model_0/model.pt', trained_path + '/fold_2/model_0/model.pt',trained_path + '/fold_1/model_0/model.pt'], cuda=False, data_path=csv_path, ensemble_size=3, features_generator=None, features_path=[features_path], fingerprint=False, gpu=0, no_cache=True, no_features_scaling=True, output_path=output_path, parser_name='predict')
 

@@ -65,7 +65,7 @@ class Model(object):
             h = next(reader)
             R = []
             for r in reader:
-                R += [{"u0_atom": [Float(x) for x in r]}]
+                R += [{"u0_atom": Float(r[0])}]
         meta = {
             "outcomes": h
         }
