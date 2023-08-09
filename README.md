@@ -1,6 +1,6 @@
-# Electronic properties by DFT
+# Atomization energy of small molecules
 
-The model predicts the electronic properties (atomization energy, HOMO/LUMO, etc.) of a molecule. It has been trained using the QM7 dataset from MoleculeNet, a subset of GDB13. This dataset contains the electronic measures of > 7000 molecules determined using ab-initio density functional theory (DFT). This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
+The model predicts the atomization energy of a molecule. It has been trained using the QM7 dataset from MoleculeNet, a subset of GDB13 containing all molecules up to 23 atoms (7 heavy atoms + C, S, O, N). This dataset contains the computed atomization energy of 7165 molecules. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
 
 ## Identifiers
 
@@ -14,8 +14,8 @@ The model predicts the electronic properties (atomization energy, HOMO/LUMO, etc
 * Task: `Regression`
 * Output: `Other value`
 * Output Type: `Float`
-* Output Shape: `List`
-* Interpretation: Several Electronic properties of the input
+* Output Shape: `Single`
+* Interpretation: Atomization energy of the molecue
 
 ## References
 
