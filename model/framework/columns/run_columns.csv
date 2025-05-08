@@ -1,0 +1,2 @@
+name,type,direction,description
+u0_atom,float,high,Atomization energy in the unrelaxed geometry (U0)

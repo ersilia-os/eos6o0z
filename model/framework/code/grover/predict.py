@@ -24,23 +24,15 @@ def setup(seed):
     random.seed(seed)
     torch.backends.cudnn.deterministic = True
 
-def smiles_to_dataframe(txt_file_path):
-
-    
-    df = pd.read_csv(txt_file_path, header=None,  names=['smiles'])
-    
+def smiles_to_dataframe(input_file):
+    df = pd.read_csv(input_file)  # Assumes 'smiles' column already exists
     dummy_labels = pd.Series(np.zeros(df.shape[0]))
-
-    names =    ['u0_atom']
-    
+    names =  ['u0_atom']
     for n in names:
         df[n] = dummy_labels.values
-
-    input_csv_path = txt_file_path.split(".")[0] + ".csv"
-    df.to_csv(input_csv_path, index=False)
-    
+    input_csv_path = "run_input_grover.csv"
+    df.to_csv(input_csv_path, index=False)  # Overwrites original CSV
     return input_csv_path
-
     
 tmp_folder = tempfile.mktemp()
 features_path = os.path.join(tmp_folder, "features.npz")
@@ -58,10 +50,9 @@ def grover_predict(input_txt_path, output_path):
     mol_vocab = MolVocab
     csv_path = smiles_to_dataframe(input_txt_path)
 
-    s = os.path.dirname(os.path.abspath(__file__))
-    p = Path(s)
-    model_path = str(p.parent.parent.parent.absolute()) + '/checkpoints'
-    trained_path= model_path+'/finetune/qm7'
+    root = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(root, "../../..", "checkpoints")
+    trained_path= os.path.join(model_path+'/finetune/qm7')
 
     args = Namespace(batch_size=32, checkpoint_dir= trained_path, checkpoint_path=None, checkpoint_paths=[trained_path + '/fold_0/model_0/model.pt', trained_path + '/fold_2/model_0/model.pt',trained_path + '/fold_1/model_0/model.pt'], cuda=False, data_path=csv_path, ensemble_size=3, features_generator=None, features_path=[features_path], fingerprint=False, gpu=0, no_cache=True, no_features_scaling=True, output_path=output_path, parser_name='predict')
 
