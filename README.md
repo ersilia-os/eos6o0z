@@ -4,6 +4,7 @@ The model predicts the atomization energy of a molecule. It has been trained usi
 
 This model was incorporated on 2022-07-13.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos6o0z`
@@ -13,7 +14,7 @@ This model was incorporated on 2022-07-13.
 - **Task:** `Annotation`
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `MoleculeNet`, `Chemical graph model`, `Quantum properties`
 
 ### Input
