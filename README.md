@@ -2,7 +2,7 @@
 
 The model predicts the atomization energy of a molecule. It has been trained using the QM7 dataset from MoleculeNet, a subset of GDB13 containing all molecules up to 23 atoms (7 heavy atoms + C, S, O, N). This dataset contains the computed atomization energy of 7165 molecules. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
 
-This model was incorporated on 2022-07-13.
+This model was incorporated on 2022-07-19.
 
 
 ## Information
@@ -41,7 +41,7 @@ Below are the **Output Columns** of the model:
 
 ### Resource Consumption
 - **Model Size (Mb):** `1417`
-- **Environment Size (Mb):** `2408`
+- **Environment Size (Mb):** `2422`
 - **Image Size (Mb):** `6595.43`
 
 **Computational Performance (seconds):**
