@@ -2,7 +2,7 @@
 
 The model predicts the atomization energy of a molecule. It has been trained using the QM7 dataset from MoleculeNet, a subset of GDB13 containing all molecules up to 23 atoms (7 heavy atoms + C, S, O, N). This dataset contains the computed atomization energy of 7165 molecules. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
 
-This model was incorporated on 2022-07-19.Last packaged on 2025-10-14.
+This model was incorporated on 2022-07-19.Last packaged on 2026-03-10.
 
 ## Information
 ### Identifiers
@@ -35,17 +35,17 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos6o0z](https://hub.docker.com/r/ersiliaos/eos6o0z)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6o0z.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6o0z.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1417`
 - **Environment Size (Mb):** `2405`
-- **Image Size (Mb):** `6677.84`
+- **Image Size (Mb):** `6680.29`
 
 **Computational Performance (seconds):**
-- 10 inputs: `34.6`
-- 100 inputs: `159.84`
+- 10 inputs: `35.23`
+- 100 inputs: `161.61`
 - 10000 inputs: `-1`
 
 ### References
