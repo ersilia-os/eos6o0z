@@ -22,7 +22,6 @@
     "Output Consistency": "Fixed",
     "Interpretation": "Atomization energy of the molecue",
     "Tag": [
-        "MoleculeNet",
         "Chemical graph model",
         "Quantum properties"
     ],
