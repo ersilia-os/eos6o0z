@@ -1,6 +1,6 @@
 # Atomization energy of small molecules
 
-The model predicts the atomization energy of a molecule. It has been trained using the QM7 dataset from MoleculeNet, a subset of GDB13 containing all molecules up to 23 atoms (7 heavy atoms + C, S, O, N). This dataset contains the computed atomization energy of 7165 molecules. This model has been trained using the GROVER transformer (see eos7w6n or grover-embedding for a detail of the molecular featurization step with GROVER)
+Returns the atomization energy of a molecule, the energy binding its constituent atoms together, without running an electronic structure calculation. QM7 supplied the reference data: 7,165 molecules taken from GDB13, each limited to 23 atoms with heavy atoms restricted to carbon, sulphur, oxygen and nitrogen. A graph transformer pretrained on 10 million unlabelled molecules was fine-tuned to reproduce the computed values. Predictions apply only to molecules of comparable size and elemental composition.
 
 This model was incorporated on 2022-07-19.Last packaged on 2026-03-10.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-07-19.Last packaged on 2026-03-10.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Atomization energy of the molecue
+- **Interpretation:** Atomization energy in kcal/mol, where more negative values indicate a more strongly bound molecule.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
