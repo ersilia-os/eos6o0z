@@ -1,6 +1,6 @@
 # Atomization energy of small molecules
 
-Returns the atomization energy of a molecule, the energy binding its constituent atoms together, without running an electronic structure calculation. QM7 supplied the reference data: 7,165 molecules taken from GDB13, each limited to 23 atoms with heavy atoms restricted to carbon, sulphur, oxygen and nitrogen. A graph transformer pretrained on 10 million unlabelled molecules was fine-tuned to reproduce the computed values. Predictions apply only to molecules of comparable size and elemental composition.
+Returns the atomization energy of a molecule, the energy holding its constituent atoms together, without running an electronic structure calculation. Reference values come from QM7, the MoleculeNet subset of GDB-13 that records computed atomization energies for 6,830 stable, synthetically accessible organic molecules. A graph transformer pretrained on 10 million unlabelled molecules was fine-tuned to reproduce them, with three fine-tuned folds averaged. Predictions only hold for molecules of comparable size and elemental composition to that small-molecule set.
 
 This model was incorporated on 2022-07-19.Last packaged on 2026-03-10.
 
