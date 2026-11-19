@@ -2,7 +2,8 @@
 
 Returns the atomization energy of a molecule, the energy holding its constituent atoms together, without running an electronic structure calculation. Reference values come from QM7, the MoleculeNet subset of GDB-13 that records computed atomization energies for 6,830 stable, synthetically accessible organic molecules. A graph transformer pretrained on 10 million unlabelled molecules was fine-tuned to reproduce them, with three fine-tuned folds averaged. Predictions only hold for molecules of comparable size and elemental composition to that small-molecule set.
 
-This model was incorporated on 2022-07-19.Last packaged on 2026-03-10.
+This model was incorporated on 2022-07-19.
+Last packaged on 2026-03-10.
 
 ## Information
 ### Identifiers
@@ -14,7 +15,7 @@ This model was incorporated on 2022-07-19.Last packaged on 2026-03-10.
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `Any`
 - **Target Organism:** `Any`
-- **Tags:** `MoleculeNet`, `Chemical graph model`, `Quantum properties`
+- **Tags:** `Chemical graph model`, `Quantum properties`
 
 ### Input
 - **Input:** `Compound`
@@ -28,7 +29,7 @@ This model was incorporated on 2022-07-19.Last packaged on 2026-03-10.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| u0_atom | float | high | Atomization energy in the unrelaxed geometry (U0) |
+| u0_atom | float | low | Atomization energy in the unrelaxed geometry (U0) |
 
 
 ### Source and Deployment
