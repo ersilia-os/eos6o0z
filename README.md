@@ -3,7 +3,7 @@
 Returns the atomization energy of a molecule, the energy holding its constituent atoms together, without running an electronic structure calculation. Reference values come from QM7, the MoleculeNet subset of GDB-13 that records computed atomization energies for 6,830 stable, synthetically accessible organic molecules. A graph transformer pretrained on 10 million unlabelled molecules was fine-tuned to reproduce them, with three fine-tuned folds averaged. Predictions only hold for molecules of comparable size and elemental composition to that small-molecule set.
 
 This model was incorporated on 2022-07-19.
-Last packaged on 2026-03-10.
+Last packaged on 2026-11-19.
 
 ## Information
 ### Identifiers
@@ -36,17 +36,17 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos6o0z](https://hub.docker.com/r/ersiliaos/eos6o0z)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6o0z.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6o0z.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1417`
 - **Environment Size (Mb):** `2404`
-- **Image Size (Mb):** `6680.29`
+- **Image Size (Mb):** `2360.1`
 
 **Computational Performance (seconds):**
-- 10 inputs: `35.23`
-- 100 inputs: `161.61`
+- 10 inputs: `33.62`
+- 100 inputs: `90.92`
 - 10000 inputs: `-1`
 
 ### References
